@@ -10,8 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.CommonUtilities;
 import utilities.Waits;
 
-import java.util.List;
-
 public class SignUp {
     private WebDriver driver;
     private Fairy fairy= Fairy.create();
