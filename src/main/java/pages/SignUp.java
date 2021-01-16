@@ -100,12 +100,12 @@ public class SignUp {
         CommonUtilities.setValue(setPasswordField,person.getPassword());
         CommonUtilities.selectDropdown(selectDateDropDown,"5");
         CommonUtilities.selectDropdown(selectMonthDropDown,"4");
-        CommonUtilities.selectDropdown(selectMonthDropDown,"1994");
+        CommonUtilities.selectDropdown(selectYearDropDown,"1994");
         CommonUtilities.selectCheckBoxOrRadioButton(newsletterCheckBox);
         CommonUtilities.setValue(billingAddressFirstNameField,person.getFullName());
         CommonUtilities.setValue(addressLine1Field,person.getAddress().getAddressLine1());
         CommonUtilities.setValue(cityField,person.getAddress().getCity());
-        CommonUtilities.selectDropdown(selectStateDropDown,"Alabama");
+        CommonUtilities.selectDropdown(selectStateDropDown,"1");
         CommonUtilities.setValue(zipPostCodeField,person.getAddress().getPostalCode());
         CommonUtilities.setValue(mobileField,person.getTelephoneNumber());
         CommonUtilities.clickWebElement(registerBtn);

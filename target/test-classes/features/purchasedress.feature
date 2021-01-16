@@ -11,4 +11,4 @@ Feature: Purchase Dress
     And   select same delivery address
     And   select payment method as "check" payment
     And   place the order
-    Then  gets order placed message with order id
+    Then  gets order placed message

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-01-16T10:52:58.594Z",
+        "start_timestamp": "2021-01-16T17:23:47.273Z",
         "before": [
           {
             "result": {
-              "duration": 20079675000,
+              "duration": 28834000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 239118000,
+              "duration": 86000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 217012000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 8546799000,
+              "duration": 4740000000,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 18620922000,
+              "duration": 8979000000,
               "status": "passed"
             },
             "line": 8,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 6042980000,
+              "duration": 5078000000,
               "status": "passed"
             },
             "line": 9,
@@ -89,19 +89,19 @@
           },
           {
             "result": {
-              "duration": 819000,
+              "duration": 11890000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "enter personal details on checkout page",
+            "name": "enter personal details on signup page",
             "match": {
-              "location": "stepDefinition.CheckoutStepDef.enter_personal_details_on_checkout_page()"
+              "location": "stepDefinition.SignUpDef.enter_personal_details_on_signup_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 438000,
+              "duration": 5989000000,
               "status": "passed"
             },
             "line": 11,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 741000,
+              "duration": 2427000000,
               "status": "passed"
             },
             "line": 12,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 1030000,
+              "duration": 3051000000,
               "status": "passed"
             },
             "line": 13,
@@ -140,152 +140,18 @@
               "location": "stepDefinition.ConfirmationStepDef.place_the_order()"
             },
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-16T10:52:58.476Z",
-        "before": [
-          {
-            "result": {
-              "duration": 20082756000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "TC02_Customer_Places_Order_From_Search",
-        "description": "",
-        "id": "purchase-dress;tc02-customer-places-order-from-search",
-        "after": [
-          {
-            "result": {
-              "duration": 276186000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 338225000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is on home page",
-            "match": {
-              "location": "stepDefinition.HomePageStepDef.user_is_on_home_page()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8318142000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "user searches for \"dress\"",
+            "line": 14,
+            "name": "gets order placed message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"dress\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepDefinition.HomePageStepDef.user_searches_for(java.lang.String)"
+              "location": "stepDefinition.ConfirmationStepDef.gets_order_placed_message_with_order_id()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 20156984000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "choose to buy the first item",
-            "match": {
-              "location": "stepDefinition.ProductListingStepDef.choose_to_buy_the_first_item()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6362624000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "And moves to checkout from mini cart",
-            "match": {
-              "location": "stepDefinition.CartStepDef.and_moves_to_checkout_from_mini_cart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 849000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "enter personal details on checkout page",
-            "match": {
-              "location": "stepDefinition.CheckoutStepDef.enter_personal_details_on_checkout_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1181000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "select same delivery address",
-            "match": {
-              "location": "stepDefinition.CheckoutStepDef.select_same_delivery_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 556000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "select payment method as \"check\" payment",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"check\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinition.CheckoutStepDef.select_payment_method_as_check_payment(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 574000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "place the order",
-            "match": {
-              "location": "stepDefinition.ConfirmationStepDef.place_the_order()"
-            },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -310,162 +176,5 @@
         }
       }
     ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2021-01-16T10:53:52.461Z",
-        "before": [
-          {
-            "result": {
-              "duration": 38892324000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.Hooks.beforeScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "TC01_Customer_Places_Order_From_Search",
-        "description": "",
-        "id": "purchase-dress2;tc01-customer-places-order-from-search",
-        "after": [
-          {
-            "result": {
-              "duration": 187334000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 165907000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is on home page",
-            "match": {
-              "location": "stepDefinition.HomePageStepDef.user_is_on_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5256212000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user searches for \"dress\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"dress\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepDefinition.HomePageStepDef.user_searches_for(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17186361000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "choose to buy the first item",
-            "match": {
-              "location": "stepDefinition.ProductListingStepDef.choose_to_buy_the_first_item()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5330142000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "And moves to checkout from mini cart",
-            "match": {
-              "location": "stepDefinition.CartStepDef.and_moves_to_checkout_from_mini_cart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 615000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "enter personal details on checkout page",
-            "match": {
-              "location": "stepDefinition.CheckoutStepDef.enter_personal_details_on_checkout_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 701000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "select same delivery address",
-            "match": {
-              "location": "stepDefinition.CheckoutStepDef.select_same_delivery_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 317000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "select payment method as \"check\" payment",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"check\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinition.CheckoutStepDef.select_payment_method_as_check_payment(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 329000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "place the order",
-            "match": {
-              "location": "stepDefinition.ConfirmationStepDef.place_the_order()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sanity"
-          }
-        ]
-      }
-    ],
-    "name": "Purchase Dress2",
-    "description": "  Description: purpose is to test automated E2E test flow",
-    "id": "purchase-dress2",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/purchasedress2.feature",
-    "tags": []
   }
 ]

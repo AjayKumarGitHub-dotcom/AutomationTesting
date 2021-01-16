@@ -24,8 +24,13 @@ public class CheckoutStepDef {
 
 
     @And("select payment method as {string} payment")
-    public void select_payment_method_as_check_payment(String string) {
-        checkout.payByCheck();
+    public void select_payment_method_and_pay(String string) {
+        if(string.equalsIgnoreCase("Cheque")) {
+            checkout.payByCheck();
+        }
+        else if(string.equalsIgnoreCase("bank wire")){
+            checkout.payByBankWire();
+        }
 
     }
 

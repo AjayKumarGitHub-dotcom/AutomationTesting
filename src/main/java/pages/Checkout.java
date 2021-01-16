@@ -49,6 +49,8 @@ public class Checkout {
     }
 
 
-
-
+    public void payByBankWire() {
+        CommonUtilities.clickWebElement(payBybankWire);
+        Waits.waitAjax(driver);
+    }
 }
