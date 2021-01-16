@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.496">
+<testcase classname="Purchase Dress" name="TC01_Customer_Places_Order_From_Search" time="0.144">
+<system-out><![CDATA[Given user is on home page..................................................passed
+When user searches for "dress"..............................................passed
+And choose to buy the first item............................................passed
+And And moves to checkout from mini cart....................................passed
+And enter personal details on checkout page.................................passed
+And select same delivery address............................................passed
+And select payment method as "check" payment................................passed
+And place the order.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

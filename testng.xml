@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite"  data-provider-thread-count="2">
+    <listeners>
+        <listener class-name="runners.customrunnerhelper.AnnotationTransformer"></listener>
+    </listeners>
+    <test name=" ChromeTest">
+        <classes>
+            <class name="runners.CustomTestRunner" />
+        </classes>
+    </test>
+</suite>
