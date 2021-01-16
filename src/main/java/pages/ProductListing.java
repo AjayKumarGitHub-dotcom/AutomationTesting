@@ -30,6 +30,9 @@ public class ProductListing {
     @FindBy(how = How.XPATH,using = "//a[@title='View my shopping cart']")
     private  WebElement miniCart;
 
+    @FindBy(how = How.XPATH,using = "//h1[normalize-space()='Printed Chiffon Dress']")
+    private WebElement dressSelected;
+
 
 
     public void selectProduct(String productName){
@@ -41,6 +44,9 @@ public class ProductListing {
         }
     }
 
+    public String getDressSelected(){
+        return dressSelected.getText();
+    }
 
     public void addTocart(){
         CommonUtilities.clickWebElement(addToCartButton);

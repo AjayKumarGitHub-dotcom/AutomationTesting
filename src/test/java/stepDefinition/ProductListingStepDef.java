@@ -2,6 +2,7 @@ package stepDefinition;
 
 import enums.Context;
 import io.cucumber.java.en.And;
+import org.testng.asserts.SoftAssert;
 import pages.ProductListing;
 import utilities.TestContext;
 
@@ -20,6 +21,9 @@ public class ProductListingStepDef {
     public void choose_to_buy_the_first_item() {
 
         productListing.selectProduct(((Map<String,String>)context.getScenarioContextInstance().getContext(Context.TESTDATA)).get("dress_name"));
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(productListing.getDressSelected(),((Map<String,String>)context.getScenarioContextInstance().getContext(Context.TESTDATA)).get("dress_name"));
+        softAssert.assertAll();
         productListing.addTocart();
 
     }

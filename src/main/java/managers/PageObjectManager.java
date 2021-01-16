@@ -10,6 +10,7 @@ public class PageObjectManager {
     private Cart pagesCart;
     private Checkout pagesCheckout;
     private Confirmation pagesConfirmation;
+    private SignUp signUp;
 
     public PageObjectManager(WebDriver driver){
         this.driver=driver;
@@ -33,6 +34,10 @@ public class PageObjectManager {
 
     public Confirmation getConfirmation() {
         return (pagesConfirmation==null)?pagesConfirmation=new Confirmation(driver):pagesConfirmation;
+    }
+
+    public SignUp getSignUp() {
+        return (signUp==null)?signUp=new SignUp(driver):signUp;
     }
 
 

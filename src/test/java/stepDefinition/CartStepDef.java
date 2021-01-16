@@ -17,4 +17,6 @@ public class CartStepDef {
         public void and_moves_to_checkout_from_mini_cart() {
             cart.clickCheckOutButton();
         }
+
+
 }

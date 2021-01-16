@@ -14,10 +14,10 @@ public class Cart {
         PageFactory.initElements(this.driver,this);
     }
     @FindBy(how = How.XPATH,using ="//span[text()='Proceed to checkout']" )
-    public WebElement proceedToPaybutton;
+    public WebElement proceedToCheckoutBtn;
 
     public void clickCheckOutButton(){
-        CommonUtilities.clickWebElement(proceedToPaybutton);
+        CommonUtilities.clickWebElement(proceedToCheckoutBtn);
 
     }
 }
