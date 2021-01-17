@@ -16,11 +16,11 @@ public class Confirmation {
     }
 
 
-    @FindBy(how = How.XPATH,using = "//span[normalize-space()='I confirm my order']")
+    @FindBy(how = How.XPATH,using = "//span[contains(text(),'I confirm my order')]")
     private WebElement confirmOrder;
 
 
-    @FindBy(how = How.XPATH,using = "//p[@class='alert alert-success']")
+    @FindBy(how = How.XPATH,using = "//*[contains(text(),'Your order on My Store is complete.')]")
     private WebElement successMsg;
 
     public void placeOrder(){
