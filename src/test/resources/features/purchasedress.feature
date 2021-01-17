@@ -1,4 +1,4 @@
-Feature: Purchase Dress
+Feature: Purchase_Dress
   Description: purpose is to test automated E2E test flow
   @Sanity
   Scenario: TC01_Customer_Places_Order_By_Cheque
