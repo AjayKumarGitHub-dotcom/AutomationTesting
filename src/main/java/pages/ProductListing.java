@@ -30,7 +30,7 @@ public class ProductListing {
     @FindBy(how = How.XPATH,using = "//a[@title='View my shopping cart']")
     private  WebElement miniCart;
 
-    @FindBy(how = How.XPATH,using = "//h1[itemprop='name']")
+    @FindBy(how = How.XPATH,using = "//h1[@itemprop='name']")
     private WebElement dressSelected;
 
 
