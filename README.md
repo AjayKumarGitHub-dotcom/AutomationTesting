@@ -13,7 +13,7 @@ A Java based Cucumber-Selenium-TestNG automation framework with CustomRunner for
 
 def featureList=[]
 featureList.add("")
-new File("/Users/<username>/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
+new File("/Users/username/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
 return featureList;
 
 #-groovy fallback script: return['error']
@@ -25,16 +25,16 @@ return featureList;
 def ScenarioList=[]
 if(Features!=""){
 for(item in Features.split(",")){
-new File("/Users/<username>/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
+new File("/Users/username/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
   }
 }
 
 else{
 def featureList=[]
-new File("/Users/<username>/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
+new File("/Users/username/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
 ScenarioList.add("");
 for(item in featureList){
-new File("/Users/<username>/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
+new File("/Users/username/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
  }
 }
 return ScenarioList;
