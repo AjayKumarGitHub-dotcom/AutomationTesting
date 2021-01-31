@@ -7,11 +7,30 @@ A Java based Cucumber-Selenium-TestNG automation framework with CustomRunner for
 #Create Maven Job configure jdk as 1.8, maven >3 auto install or configure your maven Home
 
 #1 Active Choice parameter :Feature
-#-groovy script: def featureList=[] featureList.add("") new File("/Users/<username>/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);} return featureList;                        
+#-groovy script: def featureList=[]
+featureList.add("")
+new File("/Users/ajay35.kumar/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
+return featureList;                   
 #-groovy fallback script: return['error']
 
 #2 Active choice reactive parameter: Scenarios
-#-groovy script: def ScenarioList=[] if(Features!=""){ for(item in Features.split(",")){ new #File("/Users/<username>/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);} } } else{ def featureList=[] new #File("/Users/<username>/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);} ScenarioList.add(""); for(item in featureList){ new #File("/Users/<username>/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);} } } return ScenarioList;
+#-groovy script: def ScenarioList=[]
+if(Features!=""){
+for(item in Features.split(",")){
+new File("/Users/ajay35.kumar/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
+  }
+}
+
+else{
+def featureList=[]
+new File("/Users/ajay35.kumar/.jenkins/workspace/features.txt").eachLine{line->featureList.add(line);}
+ScenarioList.add("");
+for(item in featureList){
+new File("/Users/ajay35.kumar/.jenkins/workspace/scenarios/${item}.txt").eachLine{line->ScenarioList.add(line);}
+ }
+}
+return ScenarioList;
+
 #-referance variable: Feature                           
 #-groovy fallback script: return['error']
                    
